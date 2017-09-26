@@ -151,9 +151,21 @@ footer {
 }
 
 @media(max-width:992px) {
+  .bg-light {
+      height: inherit;
+  }
+  .banner {
+    padding: 60px 0;
+  }
   img.book.img-fluid {
     margin-top: 10px;
   }
+  .content-box {
+      margin-top: -55px;
+    }
+  form {
+        margin-bottom: 0px;
+    }
 }
 
 @media(max-width:767px) {
@@ -182,6 +194,7 @@ footer {
   }
   .content-box{
     box-shadow: none;
+    margin-bottom: 0px;
   }
   .btn-primary {
     width: 100%;
