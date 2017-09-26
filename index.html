@@ -10,24 +10,25 @@
 
     <title>eBook - Lafleur</title>
 
-    <!-- Bootstrap core CSS -->
+    <!-- Bootstrap -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom fonts for this template -->
+    <!-- Fonts -->
     <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
-
-    <!-- Custom styles for this template -->
+    <!-- Styles -->
     <link href="css/landing-page.css" rel="stylesheet">
+    <!-- Scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="code.js"></script>
 
   </head>
 
   <body>
 
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="container">
-        <img src="logo.png" alt="Smiley face" height="70">
+        <img src="logo.png" alt="" height="70">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -47,18 +48,23 @@
       </div>
     </nav>
 
+    <!-- Banner -->
+    <section class="banner">
+      <div class="container">
+        <h1 class="">How to Develop a Scalable, Sustainable <br>Digital Marketing Plan for Your Law Firm.</h1>
+      </div>
+    </section>
 
     <!-- Page Content -->
     <section class="content-section-a">
 
       <div class="container">
         <div class="row">
-          <div class="col-lg-6">
-            <hr class="section-heading-spacer">
+          <div class="col-lg-6 mr-auto content-box">
             <div class="clearfix"></div>
-            <h1 class="section-heading">Poltergeist sticking charm troll</h1>
-            <p class="lead">Thestral dirigible plums, Viktor Krum hexed memory charm Animagus Invisibility Cloak three-headed Dog. Half-Blood Prince Invisibility Cloak cauldron cakes.</p>
-            <h4>Poltergeist sticking charm.</h4>
+            <!-- <h1 class="section-heading">Poltergeist sticking charm troll</h1> -->
+            <p class="lead">Thestral dirigible plums, memory charm Animagus Invisibility Cloak three-headed Dog lemon drops. Locomotor trunks owl treats that will be 50 points.</p>
+            <h4>Swiveling Blue Eye three hoops disciplinary hearing trunks.</h4>
             <ul>
               <li>Poltergeist sticking charm grindylows wool socks.</li>
               <li>Side-along dragon-scale suits Filch 20 points.</li>
@@ -66,17 +72,22 @@
             </ul>
             <p class="">Charm Animagus Invisibility Cloak three-headed Dog.</p>
 
-            <form>
+            <form method="get" action="lafleur-ebook.pdf" target="_blank">
               <div class="form-group">
-                <label for="exampleInputEmail1">Email address</label>
+                <label required="true" for="exampleInputEmail1">Email address</label>
                 <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                <!-- <div class="form-check">
+                  <label class="form-check-label">
+                    <input type="checkbox" class="form-check-input" checked>
+                    Subscribe to our newsletter
+                  </label>
+                </div> -->
               </div>
-              <button type="submit" class="btn btn-primary">Download</button>
+              <button type="submit" class="btn btn-primary disabled">Download</button>
             </form>
           </div>
-          <div class="col-lg-5">
-            <img class="img-fluid" src="ebook-cover.png" alt="">
+          <div class="col-lg-5 ml-auto">
+            <img class="book img-fluid" src="ebook-cover-pages.png" alt="">
           </div>
         </div>
 

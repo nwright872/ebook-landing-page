@@ -1,17 +1,15 @@
-/*!
- * Start Bootstrap - Landing Page (http://startbootstrap.com/template-overviews/landing-page)
- * Copyright 2013-2017 Start Bootstrap
- * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-landing-page/blob/master/LICENSE)
- */
-
 body, html {
   width: 100%;
-  height: 100%;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Gotham-Book", "Montserrat", sans-serif, Helvetica, Arial, sans-serif;
   font-weight: 700;
+}
+.bg-light {
+    height: 132px;
+    background-color: #fff!important;
+    border-bottom: 1px solid rgba(28,71,146,0.13);
 }
 .nav-link{
   color: #1c4792!important;
@@ -23,58 +21,20 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .content-section-a{
-  margin-top: 80px;
-  background-image: url("header-bg.png");
+  margin-top: 40px;
+  background-color: #fff;
 
 }
 .section-heading{
-  text-transform: capitalize;
+  text-transform: uppercase;
+}
+
+ul{
+  padding-left: 30px;
 }
 
 form {
     margin-bottom: 40px;
-}
-img-fluid {
-    max-width: 80%!important;
-}
-
-
-@media(max-width:767px) {
-  .intro-message {
-    padding-bottom: 15%;
-  }
-  .intro-message>h1 {
-    font-size: 3em;
-  }
-  ul.intro-social-buttons>li {
-    display: block;
-    margin-bottom: 20px;
-    padding: 0;
-  }
-  ul.intro-social-buttons>li:last-child {
-    margin-bottom: 0;
-  }
-  .intro-divider {
-    width: 100%;
-  }
-}
-
-.network-name {
-  text-transform: uppercase;
-  font-size: 14px;
-  font-weight: 400;
-  letter-spacing: 2px;
-}
-
-.content-section-a {
-  padding: 50px 0;
-  background-color: #f8f8f8;
-}
-
-.content-section-b {
-  padding: 50px 0;
-  border-top: 1px solid #e7e7e7;
-  border-bottom: 1px solid #e7e7e7;
 }
 
 .section-heading {
@@ -88,16 +48,19 @@ img-fluid {
 }
 
 .banner {
-  padding: 100px 0;
-  color: #f8f8f8;
-  background: url(../img/banner-bg.jpg) no-repeat center center;
+  /*margin-top: 90px;*/
+  padding: 134px 0;
+  color: #fff;
+  background: url(../header-bg.png) no-repeat center center;
   background-size: cover;
+  background-attachment: fixed;
 }
 
-.banner h2 {
-  margin: 0;
-  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
-  font-size: 3em;
+.banner h1 {
+  font-weight: 700;
+  color: #fff;
+  font-size: 1.9em;
+  margin-left: -15px;
 }
 
 .banner ul {
@@ -108,11 +71,82 @@ img-fluid {
   float: right;
   margin-top: 0;
 }
+.lead{
+    font-size: 1.1rem;
+  }
+
+.highlighter{
+  background-color:#3FC6EB;
+}
+
+.content-box{
+  margin-top: -100px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  background-color: #fff;
+  padding: 18px;
+  padding-top: 24px;
+  margin-bottom: 40px;
+}
+
+.btn-primary {
+  color: #fff;
+  font-weight: 400;
+  background-color: #0BB14E;
+  border-color: #0BB14E;
+  width: 250px;
+  text-transform: uppercase;
+  box-shadow: 0px 1px 2px 1px #D3D2D3;
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+.btn-primary:hover{
+  background-color: #0BB14E;
+  border-color: #0BB14E;
+  box-shadow: 0 6px 11px rgba(0,0,0,0.18), 0 3px 3px rgba(0,0,0,0.22);
+  cursor: pointer;
+}
+
+.btn-primary:active{
+  background-color: #0BB14E;
+  border-color: #0BB14E;
+  box-shadow: 0 6px 11px rgba(0,0,0,0.18), 0 3px 3px rgba(0,0,0,0.22);
+  cursor: pointer;
+}
+
+.btn-primary:focus {
+    box-shadow: 0 0 0 3px rgba(8, 179, 77, 0.66);
+}
+
+img.book.img-fluid {
+  max-width: 100%;
+  margin-top: -100px;
+  /*box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);*/
+}
+
+img.book.img-fluid:hover {
+  /*box-shadow: 0 6px 11px rgba(0,0,0,0.18), 0 3px 3px rgba(0,0,0,0.22);*/
+}
+
+footer {
+  background-color: #f8f8f8;
+  width: 100%;
+  display: block;
+  padding: 4%;
+  margin-top: 0px;
+}
+
 
 @media(max-width:1199px) {
   ul.banner-social-buttons {
     float: left;
     margin-top: 15px;
+  }
+}
+
+@media(max-width:992px) {
+  img.book.img-fluid {
+    margin-top: 10px;
   }
 }
 
@@ -130,13 +164,20 @@ img-fluid {
   ul.banner-social-buttons>li:last-child {
     margin-bottom: 0;
   }
+
+  p.copyright {
+    margin: 15px 0 0;
+  }
 }
 
-footer {
-  padding: 50px 0;
-  background-color: #f8f8f8;
-}
-
-p.copyright {
-  margin: 15px 0 0;
+@media(max-width:575px) {
+  .banner h1 {
+    margin-left: 0px;
+  }
+  .content-box{
+    box-shadow: none;
+  }
+  .btn-primary {
+    width: 100%;
+  }
 }
